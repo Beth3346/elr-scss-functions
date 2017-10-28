@@ -27,7 +27,7 @@
     "build": "build"
   },
   "config": {
-    "ghooks": {
+    "husky": {
       "pre-commit": "gulp build"
     }
   },

@@ -8,9 +8,9 @@
     "email": "beth3346@gmail.com"
   },
   "devDependencies": {
-    "ghooks": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-scss-lint": "^0.4.0",
+    "husky": "^0.14.3",
     "node-sass": "^4.1.1"
   },
   "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
@@ -31,7 +31,5 @@
       "pre-commit": "gulp build"
     }
   },
-  "dependencies": {
-    "husky": "^0.14.3"
-  }
+  "dependencies": {}
 }

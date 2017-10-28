@@ -6,8 +6,4 @@ gulp.task('scsslint', function() {
         .pipe(scsslint());
 });
 
-gulp.task('default', ['scsslint'], function() {
-    gulp.watch('src/**/*.scss', ['scsslint']);
-});
-
-gulp.task('build', ['scsslint']);
+gulp.task('default', ['scsslint']);

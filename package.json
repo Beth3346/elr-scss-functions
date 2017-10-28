@@ -1,0 +1,37 @@
+{
+  "name": "elr-scss-accordion",
+  "description": "a scss mixin for accordions",
+  "version": "3.1.1",
+  "author": "Elizabeth Rogers",
+  "bugs": {
+    "url": "https://github.com/Beth3346/elr-scss-accordion",
+    "email": "beth3346@gmail.com"
+  },
+  "devDependencies": {
+    "ghooks": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-scss-lint": "^0.4.0",
+    "node-sass": "^4.1.1"
+  },
+  "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
+  "keywords": [
+    "sass, css, mixins, accordion"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "dist/_main.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Beth3346/elr-scss-accordion.git"
+  },
+  "scripts": {
+    "build": "build"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp build"
+    }
+  },
+  "dependencies": {
+    "husky": "^0.14.3"
+  }
+}

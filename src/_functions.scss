@@ -12,7 +12,7 @@
     }
 }
 
-@function to-rems($size, $default-font-size = 16px) {
+@function to-rems($size, $default-font-size: 16px) {
     @if ($size == 0) {
         @return 0;
     } @else if ($size == auto) {
@@ -26,7 +26,7 @@
     }
 }
 
-@function to-ems($size, $default-font-size = 16px) {
+@function to-ems($size, $default-font-size: 16px) {
     @if ($size == 0) {
         @return 0;
     } @else if ($size == auto) {

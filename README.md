@@ -1,22 +1,20 @@
-# elr-scss-functions
+# elr-scss-accordion
 
-[![Build Status](https://travis-ci.org/Beth3346/elr-scss-functions.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-functions)
+[![Build Status](https://travis-ci.org/Beth3346/elr-scss-accordion.svg?branch=master)](https://travis-ci.org/Beth3346/elr-scss-accordion)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dm/elr-scss-functions.svg?style=flat)]()
+[![npm](https://img.shields.io/npm/dm/elr-scss-accordion.svg?style=flat)]()
 
 a library of sass mixins
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WQoMZ89hEDJBYaUN6DNr2Xrq/Beth3346/elr-scss-functions'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WQoMZ89hEDJBYaUN6DNr2Xrq/Beth3346/elr-scss-functions.svg' />
-</a>
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install elr-scss-functions --save
+npm install elr-scss-accordion --save
 ```
+
+
 
 ## Dependencies
 

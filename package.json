@@ -1,30 +1,35 @@
 {
   "name": "elr-scss-functions",
-  "description": "some helpful scss functions",
-  "version": "0.1.1",
+  "description": "a scss mixin for functionss",
+  "version": "1.1.1",
   "author": "Elizabeth Rogers",
   "bugs": {
     "url": "https://github.com/Beth3346/elr-scss-functions",
     "email": "beth3346@gmail.com"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-scss-lint": "^0.4.0",
-    "husky": "^0.14.3",
-    "node-sass": "^4.1.1"
+    "node-sass": "^6.0.1"
   },
-  "homepage": "http://www.elizabeth-rogers.com/elr-utilities/css.html",
   "keywords": [
     "sass, css, mixins, functions"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
-  "main": "_main.scss",
+  "main": "/src/_main.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Beth3346/elr-scss-functions.git"
+    "url": "https://github.com/Beth3346/elr-scss-accordion.git"
   },
-  "scripts": {
-    "precommit": "gulp"
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "elr-scss-animations": "0.0.1",
+    "elr-scss-functions": "0.1.2"
   },
-  "dependencies": {}
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp"
+    }
+  },
+  "resolutions": {
+    "natives": "1.1.3"
+  }
 }

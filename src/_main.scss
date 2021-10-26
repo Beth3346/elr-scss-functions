@@ -1,1 +1,57 @@
-@import 'src/functions';
+@use "sass:math";
+
+@function strip-units($number) {
+  @return math.div($number, $number * 0 + 1);
+}
+
+@function is-px($size) {
+  @if (type-of($size) != "number") {
+    @return false;
+  } @else if (unit($size) == "px") {
+    @return true;
+  } @else {
+    @return false;
+  }
+}
+
+@function to-rems($size, $default-font-size: 16) {
+  @if ($size == 0) {
+    @return 0;
+  } @else if ($size == auto) {
+    @return auto;
+  } @else if (is-px($size)) {
+    @return math.div(strip-units($size), $default-font-size) * 1rem;
+  } @else if (unitless($size)) {
+    @return math.div($size, $default-font-size) * 1rem;
+  } @else {
+    @return $size;
+  }
+}
+
+@function to-ems($size, $default-font-size: 16) {
+  @if ($size == 0) {
+    @return 0;
+  } @else if ($size == auto) {
+    @return auto;
+  } @else if (is-px($size)) {
+    @return math.div(strip-units($size), $default-font-size) * 1em;
+  } @else if (unitless($size)) {
+    @return math.div($size, $default-font-size) * 1em;
+  } @else {
+    @return $size;
+  }
+}
+
+@function get-aspect-ratio($width, $height) {
+  @if ($width == $height) {
+    @return 0.965;
+  } @else {
+    @return math.div($height, $width);
+  }
+}
+
+// extends object for configuration
+// allows for parameter objects to make it simpler to pass in config parameters
+@function extend($obj, $ext-obj) {
+  @return map-merge($obj, $ext-obj);
+}

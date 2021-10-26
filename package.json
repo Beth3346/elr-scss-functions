@@ -11,6 +11,7 @@
     "sass, css, mixins, functions"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
+  "sass": "/src/main.scss",
   "main": "/src/main.scss",
   "repository": {
     "type": "git",

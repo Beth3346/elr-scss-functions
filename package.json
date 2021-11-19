@@ -24,6 +24,10 @@
     "test": "echo \"No tests for this one\" && exit 0",
     "prepare": "husky install"
   },
+  "np": {
+    "yarn": false,
+    "branch": "main"
+  },
   "devDependencies": {
     "husky": "^7.0.0"
   }
